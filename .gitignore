@@ -1,0 +1,11 @@
+# 浏览器另存为产生的副本，不能用于部署
+游戏策划作品集.html
+游戏策划作品集_files/
+
+# 部署压缩包（源文件已在仓库中）
+portfolio-deploy.zip
+
+# 系统文件
+.DS_Store
+Thumbs.db
+desktop.ini
