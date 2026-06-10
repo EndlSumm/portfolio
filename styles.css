@@ -307,6 +307,12 @@ img {
   font-weight: 500;
 }
 
+.document-list {
+  display: grid;
+  gap: 0.35rem;
+  max-width: 520px;
+}
+
 .work-card__video {
   margin-bottom: 1.25rem;
 }
@@ -343,6 +349,39 @@ img {
   gap: 0.75rem;
 }
 
+.architecture-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.85rem;
+  margin: 1.25rem 0;
+  max-width: 920px;
+}
+
+.architecture-gallery__item {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-elevated);
+  cursor: zoom-in;
+  padding: 0;
+  transition: border-color var(--transition), transform var(--transition), box-shadow var(--transition);
+}
+
+.architecture-gallery__item:hover,
+.architecture-gallery__item:focus-visible {
+  border-color: rgba(91, 159, 212, 0.35);
+  box-shadow: var(--shadow);
+  transform: translateY(-2px);
+  outline: none;
+}
+
+.architecture-gallery__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /* ===== Buttons ===== */
 .btn {
   display: inline-flex;
@@ -374,6 +413,57 @@ img {
   color: var(--text);
   border-color: rgba(255, 255, 255, 0.2);
   background: rgba(255, 255, 255, 0.04);
+}
+
+/* ===== Lightbox ===== */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+  background: rgba(12, 14, 18, 0.88);
+  backdrop-filter: blur(12px);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--transition), visibility var(--transition);
+}
+
+.lightbox.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.lightbox__image {
+  max-width: min(1100px, 92vw);
+  max-height: 86vh;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+.lightbox__close {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--text);
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background var(--transition), border-color var(--transition);
+}
+
+.lightbox__close:hover,
+.lightbox__close:focus-visible {
+  border-color: rgba(255, 255, 255, 0.2);
+  background: var(--bg-elevated);
+  outline: none;
 }
 
 /* ===== Contact ===== */
@@ -471,6 +561,10 @@ img {
 
   .work-card__downloads {
     flex-direction: column;
+  }
+
+  .architecture-gallery {
+    grid-template-columns: 1fr;
   }
 
   .btn {

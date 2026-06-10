@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)file:///D:/work/level-design-portfolio/index.html -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>游戏策划作品集</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="./portfolio_files/css2" rel="stylesheet">
+  <link rel="stylesheet" href="./portfolio_files/styles.css">
+</head>
+<body>
+  <header class="header" id="top">
+    <nav class="nav container">
+      <a href="file:///D:/work/level-design-portfolio/index.html#top" class="nav__logo">游戏策划 · Portfolio</a>
+      <ul class="nav__links">
+        <li><a href="file:///D:/work/level-design-portfolio/index.html#about">关于</a></li>
+        <li><a href="file:///D:/work/level-design-portfolio/index.html#works">作品</a></li>
+        <li><a href="file:///D:/work/level-design-portfolio/index.html#contact">联系</a></li>
+      </ul>
+      <button class="nav__toggle" aria-label="打开菜单" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <p class="hero__tag">2026 · 游戏策划</p>
+      <h1 class="hero__title">劳琪雯 · 个人关卡作品集</h1>
+      <p class="hero__desc">
+        Unity 关卡白盒，注重游戏机制、叙事与玩家节奏。
+      </p>
+      <a href="file:///D:/work/level-design-portfolio/index.html#works" class="hero__cta">浏览作品</a>
+    </section>
+
+    <section class="about container" id="about">
+      <div class="about__content">
+        <h2 class="section-title">关于我</h2>
+        <ul class="about__list">
+          <li>2026 届应届硕士，建筑学 + 设计学背景，擅长将空间动线、视觉引导转化为关卡设计语言。</li>
+          <li>完成多个 Unity 关卡原型（季节切换、物理冰块、环境叙事等），关注玩家体验与认知反馈。</li>
+          <li>毕业论文研究 AI 生成文本对沉浸感与满意度的影响。</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="works container" id="works">
+      <h2 class="section-title">Demo 作品</h2>
+      <p class="section-subtitle">个人练习项目，展示设计思路、文档与可玩版本</p>
+
+      <div class="works__grid">
+        <!-- 作品 1 -->
+        <article class="work-card">
+          <div class="work-card__header">
+            <span class="work-card__index">01</span>
+            <h3 class="work-card__title">凝冰而上 Demo</h3>
+          </div>
+          <ul class="work-card__desc">
+            <li><strong>核心机制：</strong>玩家自由制冰面/冰块，冰块具备物理重量、绝缘、限时融化、融化后导电四重属性，可压板、卡齿轮、阻断电流</li>
+            <li><strong>设计亮点：</strong>将单一机制逐步叠加为 Boss 战破甲条件，利用冰块限时融化制造紧张操作窗口</li>
+            <li><strong>成果：</strong>独立设计并实现全部机关逻辑与 Boss 战</li>
+          </ul>
+          <div class="work-card__video">
+            <div class="video-embed">
+              <iframe src="./portfolio_files/player.html" title="凝冰而上 Demo 演示" scrolling="no" frameborder="0" allowfullscreen=""></iframe>
+            </div>
+          </div>
+          <div class="work-card__actions">
+            <div class="work-card__downloads">
+              <a href="file:///D:/work/level-design-portfolio/assets/docs/project-01-design-doc.pdf" class="btn btn--outline" download="">
+                <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                </svg>
+                设计文档
+              </a>
+              <a href="file:///D:/work/level-design-portfolio/assets/demos/project-01-demo.zip" class="btn btn--outline" download="">
+                <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                游戏试玩
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 作品 2 -->
+        <article class="work-card">
+          <div class="work-card__header">
+            <span class="work-card__index">02</span>
+            <h3 class="work-card__title">季节切换机制 Demo</h3>
+          </div>
+          <ul class="work-card__desc">
+            <li>独立设计并构建完整关卡流程设计，涵盖机制引导、难度递进与基础交互逻辑</li>
+            <li><strong>核心机制：</strong>手动切换季节影响地形状态（冰面 / 水面 / 植物生长）、攀爬系统、多机关联动与空间解谜</li>
+            <li><strong>设计亮点：</strong>通过地形高低差、视觉锚点、机关组合与空间限制实现路径引导，使用季节切换作为机制控制节奏；注重路径引导、视觉提示、操作反馈与节奏控制等玩家体验</li>
+            <li><strong>成果：</strong>可运行的 Unity 关卡 Demo</li>
+          </ul>
+          <div class="work-card__video">
+            <div class="video-embed">
+              <iframe src="./portfolio_files/player(1).html" title="季节切换机制 Demo 演示" scrolling="no" frameborder="0" allowfullscreen=""></iframe>
+            </div>
+          </div>
+          <div class="work-card__actions">
+            <div class="work-card__downloads">
+              <a href="file:///D:/work/level-design-portfolio/assets/docs/project-02-design-doc.pdf" class="btn btn--outline" download="">
+                <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                </svg>
+                设计文档
+              </a>
+              <a href="file:///D:/work/level-design-portfolio/assets/demos/project-02-demo.zip" class="btn btn--outline" download="">
+                <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                游戏试玩
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 作品 3 -->
+        <article class="work-card">
+          <div class="work-card__header">
+            <span class="work-card__index">03</span>
+            <h3 class="work-card__title">苔脉禁区 Demo</h3>
+          </div>
+          <ul class="work-card__desc">
+            <li><strong>核心机制：</strong>线性叙事关卡，聚焦环境叙事与情绪节奏，无文本引导</li>
+            <li><strong>设计亮点：</strong>四幕场景（水面废墟→大厅→孢子走廊→核心室），空间解密、藤蔓逃生，通过空间氛围递进控制玩家情绪</li>
+            <li><strong>成果：</strong>独立完成世界观、关卡白盒与叙事脚本</li>
+          </ul>
+          <div class="work-card__video">
+            <div class="video-embed">
+              <iframe src="./portfolio_files/player(2).html" title="苔脉禁区 Demo 演示" scrolling="no" frameborder="0" allowfullscreen=""></iframe>
+            </div>
+          </div>
+          <div class="work-card__actions">
+            <div class="work-card__downloads">
+              <a href="file:///D:/work/level-design-portfolio/assets/docs/project-03-design-doc.pdf" class="btn btn--outline" download="">
+                <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                </svg>
+                设计文档
+              </a>
+              <a href="file:///D:/work/level-design-portfolio/assets/demos/project-03-demo.zip" class="btn btn--outline" download="">
+                <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                游戏试玩
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact container" id="contact">
+      <h2 class="section-title">联系我</h2>
+      <p class="contact__text">
+        目前正在寻找游戏策划（关卡方向）相关实习或全职机会，欢迎 HR 与项目组联系。
+      </p>
+      <a href="mailto:1820878718@qq.com" class="contact__email">1820878718@qq.com</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 游戏策划作品集 · 保留所有权利</p>
+    </div>
+  </footer>
+
+  <script src="./portfolio_files/script.js"></script>
+
+
+</body></html>
