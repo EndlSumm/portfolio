@@ -313,6 +313,64 @@ img {
   max-width: 520px;
 }
 
+.work-card__meta,
+.download-status {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.work-card__meta {
+  margin-bottom: 1rem;
+}
+
+.work-card__summary {
+  color: var(--text-muted);
+  max-width: 760px;
+  margin-bottom: 1.5rem;
+}
+
+.document-heading {
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+
+.analysis-outline {
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+
+.analysis-outline li {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-top: 1px solid var(--border);
+}
+
+.analysis-outline__index {
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+
+.analysis-outline h5 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.analysis-outline p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.btn:focus-visible,
+.nav__links a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
 .work-card__video {
   margin-bottom: 1.25rem;
 }

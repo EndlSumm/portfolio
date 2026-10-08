@@ -1,15 +1,15 @@
 ﻿<!DOCTYPE html>
-<!-- saved from url=(0049)file:///D:/work/level-design-portfolio/index.html -->
 <html lang="zh-CN">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>游戏策划作品集</title>
+    <title>劳琪雯 · 关卡策划 / 玩法策划作品集</title>
+    <meta name="description" content="劳琪雯的关卡策划与玩法策划作品集：Unity 机制原型、UE 白盒复刻、关卡拆解与玩家体验研究。">
     <link rel="preconnect" href="https://fonts.googleapis.com/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
     <link href="./index_files/css2" rel="stylesheet">
-    <link rel="stylesheet" href="./index_files/styles.css">
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
     <header class="header" id="top">
@@ -18,6 +18,7 @@
             <ul class="nav__links">
                 <li><a href="#about">关于</a></li>
                 <li><a href="#works">作品</a></li>
+                <li><a href="#unreal">UE 白盒</a></li>
                 <li><a href="#analysis">拆解</a></li>
                 <li><a href="#architecture">建筑</a></li>
                 <li><a href="#contact">联系</a></li>
@@ -33,10 +34,10 @@
 
     <main>
         <section class="hero container">
-            <p class="hero__tag">2026 · 游戏策划</p>
+            <p class="hero__tag">2026 · 关卡策划 / 玩法策划</p>
             <h1 class="hero__title">劳琪雯 · 个人关卡作品集</h1>
             <p class="hero__desc">
-                Unity 关卡白盒，注重游戏机制、叙事与玩家节奏。
+                从空间分析到可玩验证，用 Unity 与 UE 搭建关卡白盒和机制原型，关注空间动线、视觉引导与玩家体验。
             </p>
             <a href="#works" class="hero__cta">浏览作品</a>
         </section>
@@ -46,28 +47,30 @@
             <div class="about__content">
                 <h2 class="section-title">关于我</h2>
                 <ul class="about__list">
-                    <li>2026 届应届硕士，建筑学 + 设计学背景，擅长将空间动线、视觉引导转化为关卡设计语言。</li>
-                    <li>完成多个 Unity 关卡原型（季节切换、物理冰块、环境叙事等），关注玩家体验与认知反馈。</li>
-                    <li>毕业论文研究 AI 生成文本对沉浸感与满意度的影响。</li>
+                    <li>2026 届应届硕士，建筑学 + 设计学背景，求职方向为关卡策划 / 玩法策划。擅长将空间组织、玩家动线与视觉引导转化为可验证的关卡设计。</li>
+                    <li>独立完成季节切换、物理制冰与环境叙事等 Unity 关卡原型，覆盖关卡流程、场景搭建、机关逻辑、功能接入与调试，产出设计文档和可运行 Demo。</li>
+                    <li>通过《生化危机 4 重制版》第九章拆解与 UE 白盒复刻，练习门洞、遮挡、高低差、机关联动及敌人基础行为，将原作分析落实为空间与交互验证。</li>
+                    <li>毕业论文研究 AI 生成文本对玩家体验的影响，收集 337 份问卷，分析不同知情状态下的体验差异；关注如何将研究发现转化为任务叙事与交互反馈设计。</li>
                 </ul>
             </div>
         </section>
 
         <section class="works container" id="works">
             <h2 class="section-title">Demo 作品</h2>
-            <p class="section-subtitle">个人练习项目，展示设计思路、文档与可玩版本</p>
+            <p class="section-subtitle">三个独立 Unity 项目，展示机制设计、空间引导与从文档到可玩版本的落地过程</p>
 
             <div class="works__grid">
                 <!-- 作品 1 -->
                 <article class="work-card">
                     <div class="work-card__header">
                         <span class="work-card__index">01</span>
-                        <h3 class="work-card__title">凝冰而上 Demo</h3>
+                        <h3 class="work-card__title">3D 机制关卡：凝冰而上 demo</h3>
                     </div>
+                    <p class="work-card__meta">2026-04</p>
                     <ul class="work-card__desc">
-                        <li><strong>核心机制：</strong>玩家自由制冰面/冰块，冰块具备物理重量、绝缘、限时融化、融化后导电四重属性，可压板、卡齿轮、阻断电流</li>
-                        <li><strong>设计亮点：</strong>将单一机制逐步叠加为 Boss 战破甲条件，利用冰块限时融化制造紧张操作窗口</li>
-                        <li><strong>成果：</strong>独立设计并实现全部机关逻辑与 Boss 战</li>
+                        <li><strong>核心机制：</strong>玩家自由制冰，冰块具备物理重量、绝缘、限时融化、融化后导电四重属性，多机关联动与空间解谜。</li>
+                        <li><strong>设计亮点：</strong>单一机制逐步叠加为 Boss 战破甲条件，利用冰块限时融化制造紧张操作窗口，构建“教学—应用—规则变化—综合终局”的四段流程。</li>
+                        <li><strong>成果：</strong>独立完成关卡设计、场景搭建、机关逻辑、功能接入和调试，产出关卡设计文档与可运行 Demo。视频：<a href="https://b23.tv/QTSPcPb" target="_blank" rel="noopener noreferrer">https://b23.tv/QTSPcPb</a></li>
                     </ul>
                     <div class="work-card__video">
                         <div class="video-embed">
@@ -101,13 +104,13 @@
                 <article class="work-card">
                     <div class="work-card__header">
                         <span class="work-card__index">02</span>
-                        <h3 class="work-card__title">季节切换机制 Demo</h3>
+                        <h3 class="work-card__title">Unity 关卡作品：季节切换 Demo</h3>
                     </div>
+                    <p class="work-card__meta">2026-03</p>
                     <ul class="work-card__desc">
-                        <li>独立设计并构建完整关卡流程设计，涵盖机制引导、难度递进与基础交互逻辑</li>
-                        <li><strong>核心机制：</strong>手动切换季节影响地形状态（冰面 / 水面 / 植物生长）、攀爬系统、多机关联动与空间解谜</li>
-                        <li><strong>设计亮点：</strong>通过地形高低差、视觉锚点、机关组合与空间限制实现路径引导，使用季节切换作为机制控制节奏；注重路径引导、视觉提示、操作反馈与节奏控制等玩家体验</li>
-                        <li><strong>成果：</strong>可运行的 Unity 关卡 Demo</li>
+                        <li><strong>核心机制：</strong>手动切换季节，通过春冬状态切换水面 / 冰面、植物生长 / 凋谢，形成可通行路径与攀爬系统，完成空间解谜。</li>
+                        <li><strong>设计亮点：</strong>通过地形高低差、视觉锚点、机关组合实现路径引导，使用季节切换作为机制控制节奏，验证同一空间在不同状态下的路线复用。</li>
+                        <li><strong>成果：</strong>产出关卡设计文档与可运行的 Unity 关卡 demo。试玩视频链接：<a href="https://b23.tv/IttbWJ1" target="_blank" rel="noopener noreferrer">https://b23.tv/IttbWJ1</a></li>
                     </ul>
                     <div class="work-card__video">
                         <div class="video-embed">
@@ -141,12 +144,13 @@
                 <article class="work-card">
                     <div class="work-card__header">
                         <span class="work-card__index">03</span>
-                        <h3 class="work-card__title">苔脉禁区 Demo</h3>
+                        <h3 class="work-card__title">线性叙事关卡：苔脉禁区 demo</h3>
                     </div>
+                    <p class="work-card__meta">2026-04</p>
                     <ul class="work-card__desc">
-                        <li><strong>核心机制：</strong>线性叙事关卡，聚焦环境叙事与情绪节奏，无文本引导</li>
-                        <li><strong>设计亮点：</strong>四幕场景（水面废墟→大厅→孢子走廊→核心室），空间解密、藤蔓逃生，通过空间氛围递进控制玩家情绪</li>
-                        <li><strong>成果：</strong>独立完成世界观、关卡白盒与叙事脚本</li>
+                        <li><strong>核心机制：</strong>以水面废墟、中央大厅、孢子走廊和核心室构成主流程，通过空间尺度、光线、视线遮挡和环境变化控制探索节奏。</li>
+                        <li><strong>设计亮点：</strong>使用环境地标和空间构图完成无文字引导，设计空间谜题、潜行段落、追逐逃生和叙事演出。</li>
+                        <li><strong>成果：</strong>独立完成世界观、关卡布局、场景搭建、逻辑整合，产出关卡设计文档与可运行 Demo，视频链接：<a href="https://b23.tv/r90LNi1" target="_blank" rel="noopener noreferrer">https://b23.tv/r90LNi1</a></li>
                     </ul>
                     <div class="work-card__video">
                         <div class="video-embed">
@@ -178,15 +182,79 @@
             </div>
         </section>
 
-        <section class="works container" id="analysis">
-            <h2 class="section-title">关卡拆解文档</h2>
-            <p class="section-subtitle">以《纪念碑谷 2》第五章为样本，梳理关卡流程、空间谜题与可借鉴设计机制</p>
-
+        <section class="works container" id="unreal">
+            <h2 class="section-title">UE 白盒复刻与验证</h2>
+            <p class="section-subtitle">从关卡拆解出发，将原作的空间关系与交互逻辑转化为可运行白盒</p>
             <article class="work-card">
                 <div class="work-card__header">
                     <span class="work-card__index">04</span>
+                    <h3 class="work-card__title">《生化危机 4 重制版》第九章 · UE 白盒复刻</h3>
+                </div>
+                <p class="work-card__meta">2026.09 · Unreal Engine · 关卡分析 / 白盒搭建 / 交互验证</p>
+                <ul class="work-card__desc">
+                    <li><strong>拆解重点：</strong>围绕大厅、宴会厅、骑士厅与画廊，分析空间结构、视线引导与机关流程，比较障碍类型及出现时机如何形成不同的游玩过程。</li>
+                    <li><strong>设计实践：</strong>使用 UE 搭建关卡白盒，复现门洞、遮挡与高低差关系，实现机关联动、组件拾取、通路开降及基础射击与敌人击毙功能。</li>
+                    <li><strong>验证重点：</strong>梳理目标呈现、路径通行与机关状态之间的关系，检查空间组织如何支持玩家理解目标并推进流程。</li>
+                    <li><strong>成果：</strong>产出关卡拆解文档与可运行白盒，将原作分析落实为空间与交互实现。</li>
+                </ul>
+                <p class="work-card__summary">复刻范围：第九章部分区域，以空间与机关验证为主；简化敌人数量和移动轨迹，未实现完整战斗压力、双角色协作及过场动画。</p>
+                <div class="work-card__actions">
+                    <a href="#re4-analysis" class="btn btn--outline">查看拆解案与五章目录 →</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="works container" id="analysis">
+            <h2 class="section-title">关卡拆解文档</h2>
+            <p class="section-subtitle">从目标、路线、信息引导与体验节奏切入，提炼可迁移到个人关卡设计中的方法</p>
+
+            <div class="works__grid">
+            <article class="work-card" id="re4-analysis">
+                <div class="work-card__header">
+                    <span class="work-card__index">05</span>
+                    <h3 class="work-card__title">《生化危机 4 重制版》第九章关卡拆解</h3>
+                </div>
+                <p class="work-card__meta">2026.09 · 空间结构 / 玩家路线 / 机关与战斗节奏 / UE 验证</p>
+                <p class="work-card__summary">以大厅与三个组件收集区域为分析对象，结合 UE 白盒复刻，梳理目标呈现、路线组织和机关状态如何共同推动关卡流程。</p>
+                <h4 class="document-heading">拆解案目录</h4>
+                <ol class="analysis-outline">
+                    <li><span class="analysis-outline__index" aria-hidden="true">01</span><div><h5>游戏概况与关卡信息</h5><p>界定分析范围、关卡目标与组件收集任务，建立后续拆解的背景。</p></div></li>
+                    <li><span class="analysis-outline__index" aria-hidden="true">02</span><div><h5>空间结构与玩家路线</h5><p>梳理大厅和三个收集区域的连接关系，关注门洞、遮挡、高低差与路线组织。</p></div></li>
+                    <li><span class="analysis-outline__index" aria-hidden="true">03</span><div><h5>信息引导、机关、战斗与体验节奏</h5><p>结合目标呈现、视线引导和机关流程，分析障碍类型及出现时机对游玩体验的影响。</p></div></li>
+                    <li><span class="analysis-outline__index" aria-hidden="true">04</span><div><h5>UE 白盒复刻与验证</h5><p>通过空间搭建、组件拾取、机关联动与基础战斗交互，验证路径通行和机关状态的关系。</p></div></li>
+                    <li><span class="analysis-outline__index" aria-hidden="true">05</span><div><h5>拆解结论与可迁移经验</h5><p>围绕目标可读性、路线组织与交互反馈，提炼可用于个人关卡原型的设计经验。</p></div></li>
+                </ol>
+                <h4 class="document-heading">拆解结论</h4>
+                <ul class="work-card__desc">
+                    <li><strong>相同目标，不同流程：</strong>宴会厅在取得组件前考验信息理解，骑士厅在拾取后安排战斗与离场条件，画廊在接近目标途中改变通路；用挑战出现的阶段和解决方式形成差异。</li>
+                    <li><strong>机关改变推进条件：</strong>明确初始受限对象、解除限制的条件、变化后的状态与玩家下一步行动，再决定机关的具体形式。</li>
+                    <li><strong>目标可见与可达分开安排：</strong>利用门洞、高差、遮挡和通道布局提前呈现目标，再通过绕行、机关与战斗组织到达过程。</li>
+                </ul>
+                <div class="work-card__actions">
+                    <a href="assets/docs/《生化危机4 重置版》第九章关卡拆解文档.pdf" class="btn btn--outline" download="生化危机4重制版-第九章关卡拆解.pdf" aria-describedby="re4-pdf-status">
+                        <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="12" y1="18" x2="12" y2="11"></line>
+                            <polyline points="9 15 12 18 15 15"></polyline>
+                        </svg>
+                        下载拆解案 PDF
+                    </a>
+                    <span class="download-status" id="re4-pdf-status">PDF · 17 页 · 2.8 MB</span>
+                </div>
+            </article>
+            <article class="work-card">
+                <div class="work-card__header">
+                    <span class="work-card__index">06</span>
                     <h3 class="work-card__title">《纪念碑谷 2》第五章关卡拆解</h3>
                 </div>
+                <p class="work-card__meta">2026.03 · 机制教学 / 空间错觉 / 视觉引导</p>
+                <ul class="work-card__desc">
+                    <li>按阶段梳理关卡路径、机关、色彩与视觉引导，分析空间错觉与视觉锚点设计。</li>
+                    <li>提炼机制教学节奏与玩家认知过程，梳理“教学—练习—变化—综合”的机制教学过程。</li>
+                    <li>将拆解结论运用于个人关卡设计，形成“分析—提炼—落地”的设计闭环。</li>
+                </ul>
+                <h4 class="document-heading">文档目录</h4>
                 <ul class="work-card__desc document-list">
                     <li>1、游戏基本概况</li>
                     <li>2、关卡基本信息</li>
@@ -203,10 +271,11 @@
                             <line x1="12" y1="18" x2="12" y2="11"></line>
                             <polyline points="9 15 12 18 15 15"></polyline>
                         </svg>
-                        下载拆解文档
+                        下载拆解案 PDF
                     </a>
                 </div>
             </article>
+            </div>
         </section>
 
         <section class="works container" id="architecture">
@@ -215,7 +284,7 @@
 
             <article class="work-card">
                 <div class="work-card__header">
-                    <span class="work-card__index">05</span>
+                    <span class="work-card__index">07</span>
                     <h3 class="work-card__title">建筑设计作品预览</h3>
                 </div>
                 <div class="architecture-gallery" aria-label="建筑设计作品预览">
@@ -272,7 +341,7 @@
         <section class="contact container" id="contact">
             <h2 class="section-title">联系我</h2>
             <p class="contact__text">
-                目前正在寻找游戏策划（关卡方向）相关实习或全职机会，欢迎 HR 与项目组联系。
+                目前正在寻找关卡策划 / 玩法策划相关实习或全职机会，欢迎 HR 与项目组联系。
             </p>
             <a href="mailto:1820878718@qq.com" class="contact__email">1820878718@qq.com</a>
         </section>
@@ -289,7 +358,7 @@
         <img class="lightbox__image" src="" alt="">
     </div>
 
-    <script src="./index_files/script.js"></script>
+    <script src="./script.js"></script>
 
 
 </body>
