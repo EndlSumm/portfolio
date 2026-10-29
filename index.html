@@ -218,11 +218,96 @@
                 <p class="work-card__summary">以大厅与三个组件收集区域为分析对象，结合 UE 白盒复刻，梳理目标呈现、路线组织和机关状态如何共同推动关卡流程。</p>
                 <h4 class="document-heading">拆解案目录</h4>
                 <ol class="analysis-outline">
-                    <li><span class="analysis-outline__index" aria-hidden="true">01</span><div><h5>游戏概况与关卡信息</h5><p>界定分析范围、关卡目标与组件收集任务，建立后续拆解的背景。</p></div></li>
-                    <li><span class="analysis-outline__index" aria-hidden="true">02</span><div><h5>空间结构与玩家路线</h5><p>梳理大厅和三个收集区域的连接关系，关注门洞、遮挡、高低差与路线组织。</p></div></li>
-                    <li><span class="analysis-outline__index" aria-hidden="true">03</span><div><h5>信息引导、机关、战斗与体验节奏</h5><p>结合目标呈现、视线引导和机关流程，分析障碍类型及出现时机对游玩体验的影响。</p></div></li>
-                    <li><span class="analysis-outline__index" aria-hidden="true">04</span><div><h5>UE 白盒复刻与验证</h5><p>通过空间搭建、组件拾取、机关联动与基础战斗交互，验证路径通行和机关状态的关系。</p></div></li>
-                    <li><span class="analysis-outline__index" aria-hidden="true">05</span><div><h5>拆解结论与可迁移经验</h5><p>围绕目标可读性、路线组织与交互反馈，提炼可用于个人关卡原型的设计经验。</p></div></li>
+                    <li id="re4-chapter-01">
+                        <span class="analysis-outline__index" aria-hidden="true">01</span>
+                        <div class="analysis-outline__content">
+                            <h5>游戏概况与关卡信息</h5>
+                            <p>界定分析范围、关卡目标与组件收集任务，建立后续拆解的背景。</p>
+                            <div class="analysis-gallery analysis-gallery--1" aria-label="游戏概况与关卡信息图解">
+                                <button class="analysis-gallery__item" type="button" data-lightbox-src="assets/images/re4-analysis/01.png" data-lightbox-alt="游戏概况、关卡信息与研究问题" aria-label="放大查看 01：游戏概况、关卡信息与研究问题">
+                                    <img src="assets/images/re4-analysis/01.png" alt="游戏概况、关卡信息与研究问题" loading="lazy" decoding="async">
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="re4-chapter-02">
+                        <span class="analysis-outline__index" aria-hidden="true">02</span>
+                        <div class="analysis-outline__content">
+                            <h5>空间结构与玩家路线</h5>
+                            <p>梳理大厅和三个收集区域的连接关系，关注门洞、遮挡、高低差与路线组织。</p>
+                            <div class="analysis-gallery analysis-gallery--1" aria-label="空间结构与玩家路线图解">
+                                <button class="analysis-gallery__item" type="button" data-lightbox-src="assets/images/re4-analysis/02.png" data-lightbox-alt="空间结构、楼层路线与视觉引导" aria-label="放大查看 02：空间结构、楼层路线与视觉引导">
+                                    <img src="assets/images/re4-analysis/02.png" alt="空间结构、楼层路线与视觉引导" loading="lazy" decoding="async">
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="re4-chapter-03">
+                        <span class="analysis-outline__index" aria-hidden="true">03</span>
+                        <div class="analysis-outline__content">
+                            <h5>信息引导、机关、战斗与体验节奏</h5>
+                            <p>结合目标呈现、视线引导和机关流程，分析障碍类型及出现时机对游玩体验的影响。</p>
+                            <div class="analysis-gallery analysis-gallery--3" aria-label="信息引导、机关、战斗与体验节奏图解">
+                                <button class="analysis-gallery__item" type="button" data-lightbox-src="assets/images/re4-analysis/03-1.png" data-lightbox-alt="餐厅：信息引导与机关" aria-label="放大查看 03-1：餐厅：信息引导与机关">
+                                    <img src="assets/images/re4-analysis/03-1.png" alt="餐厅：信息引导与机关" loading="lazy" decoding="async">
+                                </button>
+                                <button class="analysis-gallery__item" type="button" data-lightbox-src="assets/images/re4-analysis/03-2.png" data-lightbox-alt="骑士厅：目标与玩家路线" aria-label="放大查看 03-2：骑士厅：目标与玩家路线">
+                                    <img src="assets/images/re4-analysis/03-2.png" alt="骑士厅：目标与玩家路线" loading="lazy" decoding="async">
+                                </button>
+                                <button class="analysis-gallery__item" type="button" data-lightbox-src="assets/images/re4-analysis/03-3.png" data-lightbox-alt="骑士厅：机关与战斗配置" aria-label="放大查看 03-3：骑士厅：机关与战斗配置">
+                                    <img src="assets/images/re4-analysis/03-3.png" alt="骑士厅：机关与战斗配置" loading="lazy" decoding="async">
+                                </button>
+                                <button class="analysis-gallery__item" type="button" data-lightbox-src="assets/images/re4-analysis/03-4.png" data-lightbox-alt="画廊：路线变化与战斗" aria-label="放大查看 03-4：画廊：路线变化与战斗">
+                                    <img src="assets/images/re4-analysis/03-4.png" alt="画廊：路线变化与战斗" loading="lazy" decoding="async">
+                                </button>
+                                <button class="analysis-gallery__item" type="button" data-lightbox-src="assets/images/re4-analysis/03-5.png" data-lightbox-alt="商店：功能与支线连接" aria-label="放大查看 03-5：商店：功能与支线连接">
+                                    <img src="assets/images/re4-analysis/03-5.png" alt="商店：功能与支线连接" loading="lazy" decoding="async">
+                                </button>
+                                <button class="analysis-gallery__item" type="button" data-lightbox-src="assets/images/re4-analysis/03-6.png" data-lightbox-alt="流程节点与体验节奏" aria-label="放大查看 03-6：流程节点与体验节奏">
+                                    <img src="assets/images/re4-analysis/03-6.png" alt="流程节点与体验节奏" loading="lazy" decoding="async">
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="re4-chapter-04">
+                        <span class="analysis-outline__index" aria-hidden="true">04</span>
+                        <div class="analysis-outline__content">
+                            <h5>UE 白盒复刻与验证</h5>
+                            <p>通过空间搭建、组件拾取、机关联动与基础战斗交互，验证路径通行和机关状态的关系。</p>
+                            <div class="analysis-gallery analysis-gallery--2" aria-label="UE 白盒复刻与验证图解">
+                                <button class="analysis-gallery__item" type="button" data-lightbox-src="assets/images/re4-analysis/04-1.png" data-lightbox-alt="大厅：入口、空间与机关复刻" aria-label="放大查看 04-1：大厅：入口、空间与机关复刻">
+                                    <img src="assets/images/re4-analysis/04-1.png" alt="大厅：入口、空间与机关复刻" loading="lazy" decoding="async">
+                                </button>
+                                <button class="analysis-gallery__item" type="button" data-lightbox-src="assets/images/re4-analysis/04-2.png" data-lightbox-alt="大厅：房间入口、二层空间与视线引导" aria-label="放大查看 04-2：大厅：房间入口、二层空间与视线引导">
+                                    <img src="assets/images/re4-analysis/04-2.png" alt="大厅：房间入口、二层空间与视线引导" loading="lazy" decoding="async">
+                                </button>
+                                <button class="analysis-gallery__item" type="button" data-lightbox-src="assets/images/re4-analysis/04-3.png" data-lightbox-alt="画室：原作与 UE 白盒对比" aria-label="放大查看 04-3：画室：原作与 UE 白盒对比">
+                                    <img src="assets/images/re4-analysis/04-3.png" alt="画室：原作与 UE 白盒对比" loading="lazy" decoding="async">
+                                </button>
+                                <button class="analysis-gallery__item" type="button" data-lightbox-src="assets/images/re4-analysis/04-4.png" data-lightbox-alt="骑士厅：原作与 UE 白盒对比" aria-label="放大查看 04-4：骑士厅：原作与 UE 白盒对比">
+                                    <img src="assets/images/re4-analysis/04-4.png" alt="骑士厅：原作与 UE 白盒对比" loading="lazy" decoding="async">
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="re4-chapter-05">
+                        <span class="analysis-outline__index" aria-hidden="true">05</span>
+                        <div class="analysis-outline__content">
+                            <h5>拆解结论与可迁移经验</h5>
+                            <p>围绕目标可读性、路线组织与交互反馈，提炼可用于个人关卡原型的设计经验。</p>
+                            <div class="analysis-gallery analysis-gallery--3" aria-label="拆解结论与可迁移经验图解">
+                                <button class="analysis-gallery__item" type="button" data-lightbox-src="assets/images/re4-analysis/05-1.png" data-lightbox-alt="结论一：相同收集目标的流程差异" aria-label="放大查看 05-1：结论一：相同收集目标的流程差异">
+                                    <img src="assets/images/re4-analysis/05-1.png" alt="结论一：相同收集目标的流程差异" loading="lazy" decoding="async">
+                                </button>
+                                <button class="analysis-gallery__item" type="button" data-lightbox-src="assets/images/re4-analysis/05-2.png" data-lightbox-alt="结论二：机关改变推进条件" aria-label="放大查看 05-2：结论二：机关改变推进条件">
+                                    <img src="assets/images/re4-analysis/05-2.png" alt="结论二：机关改变推进条件" loading="lazy" decoding="async">
+                                </button>
+                                <button class="analysis-gallery__item" type="button" data-lightbox-src="assets/images/re4-analysis/05-3.png" data-lightbox-alt="结论三：目标可见与目标可达" aria-label="放大查看 05-3：结论三：目标可见与目标可达">
+                                    <img src="assets/images/re4-analysis/05-3.png" alt="结论三：目标可见与目标可达" loading="lazy" decoding="async">
+                                </button>
+                            </div>
+                        </div>
+                    </li>
                 </ol>
                 <h4 class="document-heading">拆解结论</h4>
                 <ul class="work-card__desc">
@@ -353,9 +438,12 @@
         </div>
     </footer>
 
-    <div class="lightbox" aria-hidden="true">
+    <div class="lightbox" role="dialog" aria-modal="true" aria-label="图片预览" aria-hidden="true">
         <button class="lightbox__close" type="button" aria-label="关闭预览">×</button>
-        <img class="lightbox__image" src="" alt="">
+        <button class="lightbox__nav lightbox__prev" type="button" aria-label="上一张图片" aria-controls="lightbox-image">‹</button>
+        <img class="lightbox__image" id="lightbox-image" src="" alt="">
+        <button class="lightbox__nav lightbox__next" type="button" aria-label="下一张图片" aria-controls="lightbox-image">›</button>
+        <p class="lightbox__caption" aria-live="polite" aria-atomic="true"></p>
     </div>
 
     <script src="./script.js"></script>
